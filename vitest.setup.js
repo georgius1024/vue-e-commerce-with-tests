@@ -1,0 +1,1 @@
+global.servicesMock = ["category 1", "category 2"];

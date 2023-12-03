@@ -4,7 +4,7 @@ import testSubject from '@/services/categories'
 
 vi.mock('@/services/request', () => ({
   default:  {
-    get: vi.fn().mockResolvedValue({data: ['category 1', 'category 2']})
+    get: vi.fn().mockResolvedValue({data: global.servicesMock})
   }
 }));
 describe('categories service', () => {

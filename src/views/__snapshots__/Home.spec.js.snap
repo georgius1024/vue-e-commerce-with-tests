@@ -1,0 +1,24 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`Home page > mounts without error 1`] = `
+"<div class=\\"container\\">
+  <ol class=\\"breadcrumb\\">
+    <li class=\\"breadcrumb-item active\\">Categories</li>
+  </ol>
+  <h1>Categories</h1>
+  <ul class=\\"list-group\\"></ul>
+</div>"
+`;
+
+exports[`Home page > use service to obtain data 1`] = `
+"<div class=\\"container\\">
+  <ol class=\\"breadcrumb\\">
+    <li class=\\"breadcrumb-item active\\">Categories</li>
+  </ol>
+  <h1>Categories</h1>
+  <ul class=\\"list-group\\">
+    <li class=\\"list-group-item text-capitalize\\"><a href=\\"#/category%201\\" class=\\"\\">category 1</a></li>
+    <li class=\\"list-group-item text-capitalize\\"><a href=\\"#/category%202\\" class=\\"\\">category 2</a></li>
+  </ul>
+</div>"
+`;
