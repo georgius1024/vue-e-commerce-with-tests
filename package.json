@@ -1,0 +1,26 @@
+{
+  "name": "vue-e-commerce-with-tests",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview"
+  },
+  "dependencies": {
+    "@fontsource/roboto": "^5.0.8",
+    "@popperjs/core": "^2.11.8",
+    "axios": "^1.4.0",
+    "bootstrap": "5.3.2",
+    "dayjs": "^1.11.9",
+    "pinia": "^2.1.7",
+    "vue": "^3.3.8",
+    "vue-router": "4"
+  },
+  "devDependencies": {
+    "@vitejs/plugin-vue": "^4.5.0",
+    "sass": "^1.62.1",
+    "vite": "^5.0.0"
+  }
+}

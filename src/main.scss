@@ -1,0 +1,9 @@
+$enable-rounded: false;
+$primary: #0066B0;
+$secondary: #223639;
+@import "bootstrap/scss/bootstrap";
+
+a {
+  text-decoration: none;
+  outline: none;
+}
