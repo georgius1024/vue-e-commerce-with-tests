@@ -1,7 +1,6 @@
 <template>
   <div
     class="card pointer hover-up"
-    style="width: 18rem"
     :data-testid="`product-preview-${product.id}`"
     @click="emit('click', product.id)"
   >
@@ -25,6 +24,9 @@ const props = defineProps({
 });
 </script>
 <style type="scss" scoped>
+.card {
+  width: 18rem;
+}
 .card-img-top {
   max-height: 24rem;
 }

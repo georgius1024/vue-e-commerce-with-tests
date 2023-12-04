@@ -1,7 +1,7 @@
 // Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
 
 exports[`Product preview > mounts without error 1`] = `
-"<div data-v-2606fbc7=\\"\\" class=\\"card pointer hover-up\\" style=\\"width: 18rem;\\" data-testid=\\"product-preview-101\\"><img data-v-2606fbc7=\\"\\" class=\\"card-img-top\\" alt=\\"preview\\">
+"<div data-v-2606fbc7=\\"\\" class=\\"card pointer hover-up\\" data-testid=\\"product-preview-101\\"><img data-v-2606fbc7=\\"\\" class=\\"card-img-top\\" alt=\\"preview\\">
   <div data-v-2606fbc7=\\"\\" class=\\"card-body\\">
     <h5 data-v-2606fbc7=\\"\\" class=\\"card-title\\">product</h5>
     <p data-v-2606fbc7=\\"\\" class=\\"card-text\\">Lorem ipsum</p><span data-v-2606fbc7=\\"\\" class=\\"float-end badge rounded-pill fs-5 bg-primary mt-3 me-3\\"> $100</span>
