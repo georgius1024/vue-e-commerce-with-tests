@@ -24,3 +24,8 @@ const props = defineProps({
   },
 });
 </script>
+<style type="scss" scoped>
+.card-img-top {
+  max-height: 24rem;
+}
+</style>
