@@ -12,14 +12,25 @@
           <img :src="product.thumbnail" class="me-3" width="48" />
           {{ product.title }}
 
-          <span class="float-end text-danger pa-3" style="cursor: pointer;" @click="removeFromCart(product)">
+          <span
+            class="float-end text-danger pa-3"
+            style="cursor: pointer"
+            :data-testid="`remove-product-${product.id}`"
+            @click="removeFromCart(product)"
+          >
             &times;
           </span>
         </li>
       </ul>
     </div>
 
-    <button :disabled="!products.length" class="w-50 mt-3 btn btn-primary" @click="checkout">Checkout</button>
+    <button
+      :disabled="!products.length"
+      class="w-50 mt-3 btn btn-primary"
+      @click="checkout"
+    >
+      Checkout
+    </button>
   </div>
 </template>
 <script setup>
@@ -29,7 +40,7 @@ const store = useCartStore();
 
 const products = computed(() => store.cart);
 
-const removeFromCart = (product) => store.remove(product)
+const removeFromCart = (product) => store.remove(product);
 
-const checkout = () => alert('Good try bro, but that doesn\'t work for now')
+const checkout = () => alert("Good try bro, but that doesn't work for now");
 </script>

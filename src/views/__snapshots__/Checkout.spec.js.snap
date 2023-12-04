@@ -1,0 +1,14 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`Checkout page > mounts without error 1`] = `
+"<div class=\\"container\\">
+  <h1>Products in your cart</h1>
+  <div class=\\"card w-50\\">
+    <ul class=\\"list-group list-group-flush\\">
+      <li class=\\"list-group-item text-capitalize\\"><img class=\\"me-3\\" width=\\"48\\"> product-1 <span class=\\"float-end text-danger pa-3\\" style=\\"cursor: pointer;\\" data-testid=\\"remove-product-101\\"> × </span></li>
+      <li class=\\"list-group-item text-capitalize\\"><img class=\\"me-3\\" width=\\"48\\"> product-2 <span class=\\"float-end text-danger pa-3\\" style=\\"cursor: pointer;\\" data-testid=\\"remove-product-102\\"> × </span></li>
+      <li class=\\"list-group-item text-capitalize\\"><img class=\\"me-3\\" width=\\"48\\"> product-3 <span class=\\"float-end text-danger pa-3\\" style=\\"cursor: pointer;\\" data-testid=\\"remove-product-103\\"> × </span></li>
+    </ul>
+  </div><button class=\\"w-50 mt-3 btn btn-primary\\"> Checkout </button>
+</div>"
+`;

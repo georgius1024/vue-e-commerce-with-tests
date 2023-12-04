@@ -1,0 +1,10 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`Product preview > mounts without error 1`] = `
+"<div class=\\"card pointer hover-up\\" style=\\"width: 18rem;\\" data-testid=\\"product-preview-101\\"><img class=\\"card-img-top\\" alt=\\"preview\\">
+  <div class=\\"card-body\\">
+    <h5 class=\\"card-title\\">product</h5>
+    <p class=\\"card-text\\">Lorem ipsum</p><span class=\\"float-end badge rounded-pill fs-5 bg-primary mt-3 me-3\\"> $100</span>
+  </div>
+</div>"
+`;

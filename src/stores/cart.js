@@ -17,7 +17,6 @@ export const useCartStore = defineStore('cart', {
   },
   actions: {
     add(product) {
-      console.log(JSON.stringify(product), JSON.stringify(this.products))
       this.products[product.id] = product
     },
     remove(product) {
