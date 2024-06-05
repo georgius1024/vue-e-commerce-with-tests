@@ -1,11 +1,13 @@
 <template>
   <div class="container">
     <template v-if="loading">
-      <div class="spinner-grow" />
-      <div class="spinner-grow" />
-      <div class="spinner-grow" />
-      <div class="spinner-grow" />
-      <div class="spinner-grow" />
+      <div class="d-flex flex-row gap-4">
+        <div class="spinner-grow" />
+        <div class="spinner-grow" />
+        <div class="spinner-grow" />
+        <div class="spinner-grow" />
+        <div class="spinner-grow" />
+      </div>
       <p>Loading...</p>
     </template>
     <template v-else>

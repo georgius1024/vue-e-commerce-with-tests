@@ -9,47 +9,34 @@
 
     <h1>Products in category {{ category }}</h1>
     <template v-if="loading">
-      <div class="spinner-grow" />
-      <div class="spinner-grow" />
-      <div class="spinner-grow" />
-      <div class="spinner-grow" />
-      <div class="spinner-grow" />
+      <div class="d-flex flex-row gap-4">
+        <div class="spinner-grow" />
+        <div class="spinner-grow" />
+        <div class="spinner-grow" />
+        <div class="spinner-grow" />
+        <div class="spinner-grow" />
+      </div>
       <p>Loading...</p>
     </template>
-    <div class="d-flex flex-row flex-wrap" >
-      <ProductPreview
-        v-for="product in products"
-        :product="product"
-        :key="product.id"
-        class="mb-2 me-2"
-        @click="navigate"
-      />
-    </div>
+    <ProductList  v-else :products="products"/>
   </div>
 </template>
 <script setup>
-import { ref, onMounted } from "vue";
-import { useRouter } from "vue-router";
-import { RouterLink } from "vue-router";
-import listProducts from "@/services/products";
-import ProductPreview from "@/components/ProductPreview.vue";
-const props = defineProps({
-  category: {
-    type: String,
-    required: true,
-  },
-});
+  import { ref, onMounted } from "vue";
+  import { useRoute } from "vue-router";
+  import { RouterLink} from "vue-router";
+  import listProducts from "@/services/products";
+  import ProductList from "@/components/ProductList.vue";
 
-const router = useRouter();
-
-const loading = ref(false);
-const products = ref([]);
-const load = async () => {
-  loading.value = true;
-  const data = await listProducts(props.category);
-  products.value = data.products;
-  loading.value = false;
-};
-onMounted(load);
-const navigate = (id) => router.push({ name: "product", params: { id, category: props.category } });
-</script>
+  const route = useRoute()
+  const category = route.params.category
+  const loading = ref(false);
+  const products = ref([]);
+  const load = async () => {
+    loading.value = true;
+    const data = await listProducts(category);
+    products.value = data.products;
+    loading.value = false;
+  };
+  onMounted(load);
+ </script>

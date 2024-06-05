@@ -9,6 +9,7 @@ vi.mock("@/services/products", () => ({
       {
         id: 101,
         title: "product-1",
+        category: 'category',
         thumbnail: null,
         description: "Lorem ipsum 1",
         price: 100,
@@ -16,6 +17,7 @@ vi.mock("@/services/products", () => ({
       {
         id: 102,
         title: "product-2",
+        category: 'category',
         thumbnail: null,
         description: "Lorem ipsum 2",
         price: 200,
@@ -23,6 +25,7 @@ vi.mock("@/services/products", () => ({
       {
         id: 103,
         title: "product-3",
+        category: 'category',
         thumbnail: null,
         description: "Lorem ipsum 3",
         price: 300,

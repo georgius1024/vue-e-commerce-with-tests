@@ -1,25 +1,23 @@
 // Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
 
 exports[`Category page > mounts without error 1`] = `
-"<div class=\\"container\\">
+"<div class=\\"container\\" category=\\"General-Products\\">
   <ol class=\\"breadcrumb\\">
     <li class=\\"breadcrumb-item\\"><a aria-current=\\"page\\" href=\\"#/\\" class=\\"router-link-active router-link-exact-active\\">Categories</a></li>
-    <li class=\\"breadcrumb-item active text-capitalize\\">General-Products</li>
+    <li class=\\"breadcrumb-item active text-capitalize\\"></li>
   </ol>
-  <h1>Products in category General-Products</h1>
-  <!--v-if-->
+  <h1>Products in category </h1>
   <div class=\\"d-flex flex-row flex-wrap\\"></div>
 </div>"
 `;
 
 exports[`Category page > mounts without error 2`] = `
-"<div class=\\"container\\">
+"<div class=\\"container\\" category=\\"General-Products\\">
   <ol class=\\"breadcrumb\\">
     <li class=\\"breadcrumb-item\\"><a aria-current=\\"page\\" href=\\"#/\\" class=\\"router-link-active router-link-exact-active\\">Categories</a></li>
-    <li class=\\"breadcrumb-item active text-capitalize\\">General-Products</li>
+    <li class=\\"breadcrumb-item active text-capitalize\\"></li>
   </ol>
-  <h1>Products in category General-Products</h1>
-  <!--v-if-->
+  <h1>Products in category </h1>
   <div class=\\"d-flex flex-row flex-wrap\\">
     <div data-v-2606fbc7=\\"\\" class=\\"card pointer hover-up mb-2 me-2\\" data-testid=\\"product-preview-101\\"><img data-v-2606fbc7=\\"\\" class=\\"card-img-top\\" alt=\\"preview\\">
       <div data-v-2606fbc7=\\"\\" class=\\"card-body\\">
