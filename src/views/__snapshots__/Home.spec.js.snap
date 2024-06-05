@@ -17,8 +17,8 @@ exports[`Home page > use service to obtain data 1`] = `
   </ol>
   <h1>Categories</h1>
   <ul class=\\"list-group\\">
-    <li class=\\"list-group-item text-capitalize\\"><a href=\\"#/category%201\\" class=\\"\\">category 1</a></li>
-    <li class=\\"list-group-item text-capitalize\\"><a href=\\"#/category%202\\" class=\\"\\">category 2</a></li>
+    <li class=\\"list-group-item text-capitalize\\"><a href=\\"#/c1\\" class=\\"\\">category 1</a></li>
+    <li class=\\"list-group-item text-capitalize\\"><a href=\\"#/c2\\" class=\\"\\">category 2</a></li>
   </ul>
 </div>"
 `;

@@ -5,32 +5,7 @@ import router from "@/router";
 
 vi.mock("@/services/products", () => ({
   default: vi.fn().mockResolvedValue({
-    products: [
-      {
-        id: 101,
-        title: "product-1",
-        category: 'category',
-        thumbnail: null,
-        description: "Lorem ipsum 1",
-        price: 100,
-      },
-      {
-        id: 102,
-        title: "product-2",
-        category: 'category',
-        thumbnail: null,
-        description: "Lorem ipsum 2",
-        price: 200,
-      },
-      {
-        id: 103,
-        title: "product-3",
-        category: 'category',
-        thumbnail: null,
-        description: "Lorem ipsum 3",
-        price: 300,
-      },
-    ],
+    products: global.productsMock,
   }),
 }));
 

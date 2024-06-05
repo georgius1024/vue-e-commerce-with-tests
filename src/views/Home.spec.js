@@ -6,7 +6,6 @@ import router from "@/router";
 vi.mock("@/services/categories", () => ({
   default: vi.fn().mockResolvedValue(global.servicesMock),
 }));
-
 describe("Home page", () => {
   const buildWrapper = () => {
     return mount(component, {
@@ -20,10 +19,13 @@ describe("Home page", () => {
     expect(wrapper.exists).toBeTruthy();
     expect(wrapper.html()).toMatchSnapshot();
   });
+
   it("use service to obtain data", async () => {
     const wrapper = buildWrapper();
     await flushPromises();
     expect(wrapper.html()).toMatchSnapshot();
-    global.servicesMock.forEach(name => expect(wrapper.html()).toContain(name))
+    global.servicesMock.forEach(({ name }) =>
+      expect(wrapper.html()).toContain(name)
+    );
   });
 });

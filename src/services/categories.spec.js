@@ -15,7 +15,7 @@ describe('categories service', () => {
   it('requests backend when called', async () => {
     const quiery = vi.spyOn(request, 'get')
     const categories = await testSubject()
-    expect(categories).toEqual(['category 1', 'category 2'])
+    expect(categories.map(e => e.name)).toEqual(['category 1', 'category 2'])
     expect(quiery).toBeCalled()
   })
 })

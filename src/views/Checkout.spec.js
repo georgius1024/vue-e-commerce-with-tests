@@ -5,29 +5,7 @@ import { useCartStore } from "@/stores/cart";
 import component from "@/views/Checkout.vue";
 
 describe("Checkout page", () => {
-  const products = [
-    {
-      id: 101,
-      title: "product-1",
-      thumbnail: null,
-      description: "Lorem ipsum 1",
-      price: 100,
-    },
-    {
-      id: 102,
-      title: "product-2",
-      thumbnail: null,
-      description: "Lorem ipsum 2",
-      price: 200,
-    },
-    {
-      id: 103,
-      title: "product-3",
-      thumbnail: null,
-      description: "Lorem ipsum 3",
-      price: 300,
-    },
-  ]
+  const products = global.productsMock
   const buildWrapper = () => {
     return mount(component);
   };

@@ -17,15 +17,7 @@ useRouter.mockImplementation(() => ({
 describe("Product List", () => {
   const buildWrapper = () => {
     const propsData = {
-      products: [
-        {
-          id: 101,
-          title: "product",
-          thumbnail: null,
-          description: "Lorem ipsum",
-          price: 100,
-        },
-      ],
+      products: global.productsMock,
     };
     return mount(component, {
       propsData,
