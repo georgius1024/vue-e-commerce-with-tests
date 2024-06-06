@@ -9,7 +9,7 @@ vi.mock("@/services/products", () => ({
   }),
 }));
 
-describe("Category page", () => {
+describe("Category page with real router", () => {
   beforeEach(async () => {
     router.push("/");
     await router.isReady();
