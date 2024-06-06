@@ -13,6 +13,7 @@ test('test', async ({ page }) => {
   await expect(page.getByTestId('checkout').first()).toHaveText('1 product in your cart');
   await page.getByRole('link', { name: 'product in your cart' }).click();
   page.once('dialog', dialog => {
+    expect(dialog.message()).toBe('Good try bro, but that doesn\'t work for now')
     console.log(`Dialog message: ${dialog.message()}`);
     dialog.dismiss().catch(() => {});
   });
