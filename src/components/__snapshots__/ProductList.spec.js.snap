@@ -2,22 +2,22 @@
 
 exports[`Product List > mounts without error 1`] = `
 "<div class=\\"d-flex flex-row flex-wrap\\">
-  <div data-v-2606fbc7=\\"\\" class=\\"card pointer hover-up mb-2 me-2\\" data-testid=\\"product-preview-101\\"><img data-v-2606fbc7=\\"\\" class=\\"card-img-top\\" alt=\\"preview\\">
-    <div data-v-2606fbc7=\\"\\" class=\\"card-body\\">
-      <h5 data-v-2606fbc7=\\"\\" class=\\"card-title\\">product-1</h5>
-      <p data-v-2606fbc7=\\"\\" class=\\"card-text\\">Lorem ipsum 1</p><span data-v-2606fbc7=\\"\\" class=\\"float-end badge rounded-pill fs-5 bg-primary mt-3 me-3\\"> $100</span>
+  <div data-v-7e52faca=\\"\\" class=\\"card pointer hover-up mb-2 me-2\\" data-testid=\\"product-preview-101\\"><img data-v-7e52faca=\\"\\" class=\\"card-img-top\\" alt=\\"preview\\">
+    <div data-v-7e52faca=\\"\\" class=\\"card-body\\">
+      <h5 data-v-7e52faca=\\"\\" class=\\"card-title\\">product-1</h5>
+      <p data-v-7e52faca=\\"\\" class=\\"card-text\\">Lorem ipsum 1</p><span data-v-7e52faca=\\"\\" class=\\"float-end badge rounded-pill fs-5 bg-primary mt-3 me-3\\"> $100</span>
     </div>
   </div>
-  <div data-v-2606fbc7=\\"\\" class=\\"card pointer hover-up mb-2 me-2\\" data-testid=\\"product-preview-102\\"><img data-v-2606fbc7=\\"\\" class=\\"card-img-top\\" alt=\\"preview\\">
-    <div data-v-2606fbc7=\\"\\" class=\\"card-body\\">
-      <h5 data-v-2606fbc7=\\"\\" class=\\"card-title\\">product-2</h5>
-      <p data-v-2606fbc7=\\"\\" class=\\"card-text\\">Lorem ipsum 2</p><span data-v-2606fbc7=\\"\\" class=\\"float-end badge rounded-pill fs-5 bg-primary mt-3 me-3\\"> $200</span>
+  <div data-v-7e52faca=\\"\\" class=\\"card pointer hover-up mb-2 me-2\\" data-testid=\\"product-preview-102\\"><img data-v-7e52faca=\\"\\" class=\\"card-img-top\\" alt=\\"preview\\">
+    <div data-v-7e52faca=\\"\\" class=\\"card-body\\">
+      <h5 data-v-7e52faca=\\"\\" class=\\"card-title\\">product-2</h5>
+      <p data-v-7e52faca=\\"\\" class=\\"card-text\\">Lorem ipsum 2</p><span data-v-7e52faca=\\"\\" class=\\"float-end badge rounded-pill fs-5 bg-primary mt-3 me-3\\"> $200</span>
     </div>
   </div>
-  <div data-v-2606fbc7=\\"\\" class=\\"card pointer hover-up mb-2 me-2\\" data-testid=\\"product-preview-103\\"><img data-v-2606fbc7=\\"\\" class=\\"card-img-top\\" alt=\\"preview\\">
-    <div data-v-2606fbc7=\\"\\" class=\\"card-body\\">
-      <h5 data-v-2606fbc7=\\"\\" class=\\"card-title\\">product-3</h5>
-      <p data-v-2606fbc7=\\"\\" class=\\"card-text\\">Lorem ipsum 3</p><span data-v-2606fbc7=\\"\\" class=\\"float-end badge rounded-pill fs-5 bg-primary mt-3 me-3\\"> $300</span>
+  <div data-v-7e52faca=\\"\\" class=\\"card pointer hover-up mb-2 me-2\\" data-testid=\\"product-preview-103\\"><img data-v-7e52faca=\\"\\" class=\\"card-img-top\\" alt=\\"preview\\">
+    <div data-v-7e52faca=\\"\\" class=\\"card-body\\">
+      <h5 data-v-7e52faca=\\"\\" class=\\"card-title\\">product-3</h5>
+      <p data-v-7e52faca=\\"\\" class=\\"card-text\\">Lorem ipsum 3</p><span data-v-7e52faca=\\"\\" class=\\"float-end badge rounded-pill fs-5 bg-primary mt-3 me-3\\"> $300</span>
     </div>
   </div>
 </div>"

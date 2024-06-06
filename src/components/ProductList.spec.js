@@ -1,17 +1,19 @@
 import { describe, it, expect, beforeAll, beforeEach, vi } from "vitest";
 import { mount } from "@vue/test-utils";
-import { useRouter } from "vue-router";
+import { useRouter, useRoute } from "vue-router";
 import component from "@/components/ProductList.vue";
 
-vitest.mock("vue-router", () => ({
-  useRouter: vi.fn(() => ({
-    push: () => {},
-  })),
-}));
+vi.mock("vue-router");
 
 const push = vi.fn();
 useRouter.mockImplementation(() => ({
   push,
+}));
+
+useRoute.mockImplementation(() => ({
+  params: { category: "c1" },
+  name: "category",
+  query: { page: 1 },
 }));
 
 describe("Product List", () => {
