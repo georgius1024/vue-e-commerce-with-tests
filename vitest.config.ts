@@ -8,7 +8,7 @@ export default defineConfig({
     exclude: ['e2e'],
     globals: true,
     environment: "jsdom",
-    setupFiles: "vitest.setup.js"
+    setupFiles: path.resolve(__dirname, './vitest.setup.js')
   },
   root: ".", 
   resolve: {
