@@ -5,7 +5,7 @@ import Vue from "@vitejs/plugin-vue";
 export default defineConfig({
   plugins: [Vue()],
   test: {
-    exclude: ['e2e'],
+    exclude: ['e2e', 'node_modules'],
     globals: true,
     environment: "jsdom",
     setupFiles: path.resolve(__dirname, './vitest.setup.js')
